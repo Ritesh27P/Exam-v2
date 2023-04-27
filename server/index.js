@@ -10,6 +10,9 @@ const app = express();
 app.use(express.json())
 dotenv.config()
 
+// routes
+app.use(require('./routes/auth.js'))
+
 mongoose.connect(process.env.MONGODB, {
     useNewUrlParser: true,
     useUnifiedTopology: true
