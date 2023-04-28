@@ -19,9 +19,9 @@ const StudentSchema = mongoose.Schema({
     },
     assign_exam: {
         required: true,
-        type: String
+        type: Array
     },
-    email: {
+    student_id: {
         required: true,
         type: String
     },

@@ -12,6 +12,7 @@ dotenv.config()
 
 // routes
 app.use(require('./routes/auth.js'))
+app.use(require('./routes/addStudent.js'))
 
 mongoose.connect(process.env.MONGODB, {
     useNewUrlParser: true,
