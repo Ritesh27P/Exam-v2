@@ -13,7 +13,9 @@ dotenv.config()
 // routes
 app.use(require('./routes/auth.js'))
 app.use(require('./routes/addStudent.js'))
+app.use(require('./routes/uploadQuestion.js'))
 
+//mongoose setup
 mongoose.connect(process.env.MONGODB, {
     useNewUrlParser: true,
     useUnifiedTopology: true

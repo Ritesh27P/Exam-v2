@@ -21,6 +21,9 @@ const AdminSchema = mongoose.Schema({
         required: true,
         type: Array
     },
+    questionSet: {
+        type: Array
+    }
 })
 
 const Admin = mongoose.model('Admin', AdminSchema)

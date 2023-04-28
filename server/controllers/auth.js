@@ -16,7 +16,7 @@ exports.RegisterAdmin = async (req, res)=> {
         const passwordHash = await bcrypt.hash(password, salt);
 
         const newAdmin = await new Admin(
-            {name, email, password: passwordHash, assign_student_list: [], created_exam: []}
+            {name, email, password: passwordHash, assign_student_list: [], created_exam: [], questionSet: []}
         )
 
         await newAdmin.save()
