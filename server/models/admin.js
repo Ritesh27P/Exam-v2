@@ -14,11 +14,9 @@ const AdminSchema = mongoose.Schema({
         type: String
     },
     assign_student_list: {
-        required: true,
         type: Array
     },
     created_exam: {
-        required: true,
         type: Array
     },
     questionSet: {

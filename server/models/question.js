@@ -9,8 +9,8 @@ const QuestionSchema = mongoose.Schema({
     },
     questionSet: {
         type: Array,
-        required: true
     }
+
 })
 
 const Question = mongoose.model('Question', QuestionSchema)

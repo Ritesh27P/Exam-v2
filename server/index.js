@@ -14,6 +14,8 @@ dotenv.config()
 app.use(require('./routes/auth.js'))
 app.use(require('./routes/addStudent.js'))
 app.use(require('./routes/uploadQuestion.js'))
+app.use(require('./routes/createExam.js'))
+app.use(require('./routes/examResponse.js'))
 
 //mongoose setup
 mongoose.connect(process.env.MONGODB, {
