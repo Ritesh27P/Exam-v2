@@ -19,6 +19,10 @@ app.use(require('./routes/uploadQuestion.js'))
 app.use(require('./routes/createExam.js'))
 app.use(require('./routes/examResponse.js'))
 
+app.get('/', (req, res)=> {
+    res.send('hello from exam backend');
+})
+
 //mongoose setup
 mongoose.connect(process.env.MONGODB, {
     useNewUrlParser: true,
