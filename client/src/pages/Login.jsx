@@ -29,7 +29,7 @@ const Login = () => {
         const data = await response.json();
         console.log(data);
         localStorage.setItem('token', data.token);
-        localStorage.setItem('userId', data.message._id);
+        localStorage.setItem('adminId', data.message._id);
         navigate('/admin', {replace: true})
     }
 
@@ -46,9 +46,8 @@ const Login = () => {
         })
 
         const data = await response.json();
-        console.log(data);
         localStorage.setItem('token', data.token);
-        localStorage.setItem('userId', data.message._id);
+        localStorage.setItem('studentId', data.message._id);
         navigate('/student', {replace: true})
 
     }
